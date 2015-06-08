@@ -1,0 +1,84 @@
+.head1 {
+
+    text-align: center;
+    color: whitesmoke;
+}
+
+.invent {
+
+    color: #EAB5F1;
+}
+
+.underline,.measure {
+
+        /*text-decoration: underline;
+        text-decoration-color: #EAB5F1;
+        padding-bottom: 1px;
+        width: 300px;*/
+    border-bottom: 1px solid #EAB5F1;
+    width:100%;
+    margin: 0 auto;
+
+}
+
+.body {
+
+    background-color: black;
+    font-family: SourceSansPro-Light;
+    font-family: SourceSansPro-Regular;
+}
+
+.ingredients {
+    height:110px;
+    background: #585858;
+    padding-top: 8px;
+    font-size: 11px;
+    color: #F8F8F8;
+    word-spacing: 5px;
+    padding-left: 10px;
+}
+
+.values {
+
+    height:50px;
+    padding-left: 0px;
+    padding-right: 0px;
+    background: #585858;
+    float: left;
+}
+
+#img {
+    width: 30px;
+
+}
+
+input.qty{
+    width: 40px;
+    height:40px;
+    border-radius: 5px;
+    padding: 10px 10px 0 0;
+    font-size: 25px;
+    font-family: SourceSansPro-Regular;
+    font-weight: bold;
+    text-align: center;
+}
+.drink {
+    height: 40px;
+    background: #383838;
+    padding-top: 10px;
+    text-align: center;
+    font-size: 23px;
+    color: #9933FF;
+}
+
+.con1 {
+
+    padding: 10px 0px 10px 0px;
+    width: 300px;
+    text-align: center;
+    background: #CC66CC;
+    color: #FFFFFF;
+    font-family: SourceSansPro-Regular;
+    border-radius: 5px;
+    border-collapse: collapse;
+    font-size: 20px;

@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html ng-app="barApp">
+<head lang="en">
+    <meta charset="UTF-8">
+    <title ng-controller="NameCtrl as hctrl">{{hctrl.name}}</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" type="text/css" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/css/bootstrap.min.css">
+
+    <script src="angular.js"></script>
+    <script src="app.js"></script>
+</head>
+<body class="body" ng-controller="BarCtrl as ctrl">
+<div class="head1">
+    <h1>Bar Stock</h1>
+</div>
+<div class="container">
+    <div class="col-xs-12 col-sm-6 col-md-3 invent" ng-repeat="stock in ctrl.stocks">
+        <div class="col-xs-7 col-sm-7 col-md-7 underline">{{stock.ingredient}}</div>
+        <div class="col-xs-4 col-sm-4 col-md-4 measure">{{stock.qty}} {{stock.measurement}}</div>
+        <div class="col-xs-1 col-sm-1 col-md-1"></div>
+    </div>
+</div>
+     <br/>
+<br/>
+<div class="head1">
+    <h1>Orders</h1>
+</div>
+<div class="container" ng-controller="HomeCtrl as mctrl">
+    <div class="col-md-1"></div>
+    <div class="col-xs-6 col-md-2 white">
+        <div class="drink">Bloody Mary</div>
+        <div class="ingredients">
+            <p>2oz Vodka</p>
+            <p>4oz Bloody Mary Mix</p>
+            <p>1 Celery Stalk</p>
+        </div>
+        <div class="values">
+            <div class="col-xs-4 col-md-4 nopadding"><input type="image" src="Assets/plus.png" id="img" ng-click="mctrl.add()"/></div>
+            <div class="col-xs-4 col-md-4 nopadding"><input type="text" class="qty" ng-model="mctrl.count"/></div>
+            <div class="col-xs-4 col-md-4 nopadding"><input type="image" src="Assets/minus.png" id="img" ng-click="mctrl.minus()"/></div>
+        </div>
+    </div>
+    <div class="col-md-2 white">
+        <div class="drink">Martini</div>
+        <div class="ingredients">
+            <p>2oz Gin</p>
+            <p>1oz Dry vermouth</p>
+            <p>1 Olive</p>
+        </div>
+        <div class="values">
+            <div class="col-xs-4 col-md-4 nopadding"><input type="image" src="Assets/plus.png" id="img" ng-click="mctrl.add1()"/></div>
+            <div class="col-xs-4 col-md-4 nopadding"><input type="text" class="qty" ng-model="mctrl.count1"/></div>
+            <div class="col-xs-4 col-md-4 nopadding"><input type="image" src="Assets/minus.png" id="img" ng-click="mctrl.minus1()"/></div>
+        </div>
+    </div>
+    <div class="col-md-2 white">
+        <div class="drink">Margarita</div>
+        <div class="ingredients">
+            <p>2oz Tequila</p>
+            <p>1oz Orange Juice</p>
+            <p>1oz Agave Nector</p>
+            <p>1 Lime</p>
+        </div>
+        <div class="values">
+            <div class="col-xs-4 col-md-4 nopadding"><input type="image" src="Assets/plus.png" id="img" ng-click="mctrl.add2()"/></div>
+            <div class="col-xs-4 col-md-4 nopadding"><input type="text" class="qty" ng-model="mctrl.count2"/></div>
+            <div class="col-xs-4 col-md-4 nopadding"><input type="image" src="Assets/minus.png" id="img" ng-click="mctrl.minus2()"/></div>
+        </div>
+    </div>
+    <div class="col-md-2 white">
+        <div class="drink">Screw Driver</div>
+        <div class="ingredients">
+            <p>2oz Vodka</p>
+            <p>4oz Orange Juice</p>
+        </div>
+        <div class="values">
+            <div class="col-xs-4 col-md-4 nopadding"><input type="image" src="Assets/plus.png" id="img" ng-click="mctrl.add3()"/></div>
+            <div class="col-xs-4 col-md-4 nopadding"><input type="text" class="qty" ng-model="mctrl.count3"/></div>
+            <div class="col-xs-4 col-md-4 nopadding"><input type="image" src="Assets/minus.png" id="img" ng-click="mctrl.minus3()"/></div>
+        </div>
+    </div>
+    <div class="col-md-2 white">
+        <div class="drink">Manhattan</div>
+        <div class="ingredients">
+            <p>2oz Whiskey</p>
+            <p>1oz Sweet Vermouth</p>
+            <p>1 Cherry</p>
+        </div>
+        <div class="values">
+            <div class="col-xs-4 col-md-4 nopadding"><input type="image" src="Assets/plus.png" id="img" ng-click="mctrl.add4()"/></div>
+            <div class="col-xs-4 col-md-4 nopadding"><input type="text" class="qty" ng-model="mctrl.count4"/></div>
+            <div class="col-xs-4 col-md-4 nopadding"><input type="image" src="Assets/minus.png" id="img" ng-click="mctrl.minus4()"/></div>
+        </div>
+    </div>
+    <div class="col-md-1"></div>
+</div>
+<br/>
+<br/>
+<div class="container">
+    <div class="col-md-4"></div>
+    <div class="col-md-4">
+        <button class="con1" type="button">Place Order</button>
+    </div>
+    <div class="col-md-4"></div>
+</div>
+</body>
+</html>
